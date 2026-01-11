@@ -5,19 +5,24 @@
 @theme {
   --color-white: #ffffff;
   --color-black: #000000;
-  --color-navy-800: #223344;
-  --color-navy-200: #e4e6f8;
-  --color-navy-100: #f3f5fc;
-  --color-blue-600: #004dff;
-  --color-blue-100: #f0f5ff;
-  --color-yellow-500: #ffaa00;
-  --color-yellow-100: #fffdf0;
-  --color-red-500: #ff3344;
-  --color-red-100: #fff0f0;
-  --color-green-500: #00cc77;
-  --color-green-100: #e0fff0;
-  --color-gradient-start: #6633cc;
-  --color-gradient-end: #004dff;
+
+  --color-navy-950: #303B59;
+  --color-navy-200: #cac9ff;
+  --color-navy-50: #ecf2ff;
+
+  --color-blue-800: #1125d6;
+  --color-blue-50: #f3f4fd;
+
+  --color-yellow-400: #ffb21e;
+  --color-yellow-50: #fffbf4;
+
+  --color-red-400: #ff5555;
+  --color-red-50: #fff6f6;
+
+  --color-green-500: #00bb8f;
+  --color-green-100: #f2fcf9;
+
+ 
   --font-sans: 'Hanken Grotesk', sans-serif;
 }
 
@@ -33,7 +38,7 @@
   .text-preset-2 {
     font-family: var(---font-sans);
     font-weight: 800;
-    font-size: 3rem;
+    font-size: 3.5rem;
     line-height: 100%;
     letter-spacing: normal;
   }
@@ -41,8 +46,8 @@
   .text-preset-3 {
     font-family: var(---font-sans);
     font-weight: 700;
-    font-size: 2.25rem;
-    line-height: 100%;
+    font-size: 2rem;
+    line-height: 130%;
     letter-spacing: normal;
   }
 

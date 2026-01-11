@@ -2,61 +2,64 @@
   <h1>Resuls Summary Component</h1>
 </header>
 
-<main>
-  <section class="gradient-2 rounded-bl-4xl rounded-br-4xl">
-    <div class="w-65 mx-auto flex flex-col items-center py-8 gap-6">
-      <h2 class="text-preset-5-bold text-navy-200 text-center">Your Result</h2>
-      <p class="h-35 w-35 rounded-full flex flex-col justify-center items-center gradient-1">
-        <span class="text-preset-2 text-white">76</span>
-        <span class="text-preset-6-bold text-navy-200">of 100</span>
-      </p>
-      <p class="flex flex-col gap-2">
-        <strong class="text-preset-4 text-center text-white">Great</strong>
-        <span class="text-preset-6-medium text-center text-navy-200"
-          >You scored higher than 65% of the people who have taken these tests.</span
+<main class="mb-7.5">
+  <div class="flex flex-col gap-6">
+    <section class="gradient-2 rounded-bl-4xl rounded-br-4xl">
+      <div class="w-65 mx-auto flex flex-col items-center py-8 gap-6">
+        <h2 class="text-preset-5-bold text-navy-200 text-center">Your Result</h2>
+        <p class="h-35 w-35 rounded-full flex flex-col justify-center items-center gradient-1">
+          <span class="text-preset-2 text-white">76</span>
+          <span class="text-preset-6-bold text-navy-200">of 100</span>
+        </p>
+        <p class="flex flex-col gap-2">
+          <strong class="text-preset-4 text-center text-white">Great</strong>
+          <span class="text-preset-6-medium text-center text-navy-200"
+            >You scored higher than 65% of the people who have taken these tests.</span
+          >
+        </p>
+      </div>
+    </section>
+
+    <section class="w-78.75 max-w-[92%] mx-auto">
+      <h2 class="text-preset-5-bold text-navy-950">Summary</h2>
+      <ul class="grid gap-4 mt-6">
+        <li>
+          <app-result-item
+            title="Reaction"
+            icon="/icons/icon-reaction.svg"
+            result="80"
+            color="red"
+          />
+        </li>
+
+        <li>
+          <app-result-item
+            title="Memory"
+            icon="/icons/icon-memory.svg"
+            result="92"
+            color="yellow"
+          />
+        </li>
+
+        <li>
+          <app-result-item title="Verbal" icon="/icons/icon-verbal.svg" result="61" color="green" />
+        </li>
+
+        <li>
+          <app-result-item title="Visual" icon="/icons/icon-visual.svg" result="73" color="blue" />
+        </li>
+      </ul>
+
+      <div class="mt-6">
+        <button
+          type="button"
+          class="rounded-full bg-navy-950 h-14 w-full text-white text-preset-5-bold"
         >
-      </p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Resumo</h2>
-    <ul>
-      <li>
-        <div>
-          <img src="icon/icon-reaction.svg" alt="Reaction icon" />
-          <span>Reação</span>
-        </div>
-        <div><strong>80</strong> <span>/ 100</span></div>
-      </li>
-
-      <li>
-        <div>
-          <img src="icon/icon-memory.svg" alt="Memory icon" />
-          <span>Memória</span>
-        </div>
-        <div><strong>92</strong> <span>/ 100</span></div>
-      </li>
-
-      <li>
-        <div>
-          <img src="icon/icon-verbal.svg" alt="Verbal icon" />
-          <span>Verbal</span>
-        </div>
-        <div><strong>61</strong> <span>/ 100</span></div>
-      </li>
-
-      <li>
-        <div>
-          <img src="icon/icon-visual.svg" alt="Visual icon" />
-          <span>Visual</span>
-        </div>
-        <div><strong>73</strong> <span>/ 100</span></div>
-      </li>
-    </ul>
-
-    <button type="button">Continuar</button>
-  </section>
+          Continue
+        </button>
+      </div>
+    </section>
+  </div>
 </main>
 
 <router-outlet />

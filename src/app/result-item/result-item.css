@@ -1,0 +1,19 @@
+[data-color="red"] {
+  background: var(--color-red-50);
+  color: var(--color-red-400);
+}
+
+[data-color="green"] {
+  background: var(--color-green-50);
+  color: var(--color-green-500);
+}
+
+[data-color="blue"] {
+  background: var(--color-blue-50);
+  color: var(--color-blue-800);
+}
+
+[data-color="yellow"] {
+  background: var(--color-yellow-50);
+  color: var(--color-yellow-400);
+}
