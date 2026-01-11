@@ -2,12 +2,14 @@
   <h1>Resuls Summary Component</h1>
 </header>
 
-<main class="mb-7.5">
-  <div class="flex flex-col gap-6">
-    <section class="gradient-2 rounded-bl-4xl rounded-br-4xl">
-      <div class="w-65 mx-auto flex flex-col items-center py-8 gap-6">
+<main class="bg-blue-50 md:py-71 min-h-screen">
+  <div
+    class="flex flex-col gap-6 pb-7.5 bg-white md:flex-row md:pb-0 md:w-171.5 md:max-w-[92%] md:mx-auto md:rounded-4xl md:gap-0 lg:w-184"
+  >
+    <section class="gradient-2 rounded-bl-4xl rounded-br-4xl md:w-84.5 md:rounded-4xl lg:w-92">
+      <div class="w-65 mx-auto flex flex-col items-center py-8 gap-6 md:w-50 md:gap-8">
         <h2 class="text-preset-5-bold text-navy-200 text-center">Your Result</h2>
-        <p class="h-35 w-35 rounded-full flex flex-col justify-center items-center gradient-1">
+        <p class="h-35 w-35 rounded-full flex flex-col justify-center items-center gradient-1 md:h-50 md:w-50">
           <span class="text-preset-2 text-white">76</span>
           <span class="text-preset-6-bold text-navy-200">of 100</span>
         </p>
@@ -20,9 +22,9 @@
       </div>
     </section>
 
-    <section class="w-78.75 max-w-[92%] mx-auto">
+    <section class="w-78.75 max-w-[92%] mx-auto md:py-11 md:px-10 md:mx-0 md:max-w-none md:w-[initial] md:flex-1">
       <h2 class="text-preset-5-bold text-navy-950">Summary</h2>
-      <ul class="grid gap-4 mt-6">
+      <ul class="grid gap-4 mt-6 md:mt-8">
         <li>
           <app-result-item
             title="Reaction"
@@ -50,10 +52,10 @@
         </li>
       </ul>
 
-      <div class="mt-6">
+      <div class="mt-6 md:mt-8">
         <button
           type="button"
-          class="rounded-full bg-navy-950 h-14 w-full text-white text-preset-5-bold"
+          class="btn-continue rounded-full bg-navy-950 h-14 w-full text-white text-preset-5-bold"
         >
           Continue
         </button>
